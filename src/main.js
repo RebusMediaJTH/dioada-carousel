@@ -21,7 +21,6 @@ export default options => {
         count = items.length,
         itemWidth = count ? 100 / count : 0;
 
-    //carousel.classList.add("dioada-carousel-ready");
     if (options.keyboard) {
         carousel.setAttribute("tabindex", "0");
     }
@@ -50,7 +49,7 @@ export default options => {
     const updateTx = () => {
         const min = -itemWidth * Math.min(count - 1, idx + 1),
             max = -itemWidth * Math.max(0, idx - 1);
-        itemsContainer.style.transform = `translateX(${Math.min(max, Math.max(min, -itemWidth * idx + swipeAmount))}%)`;
+        itemsContainer.style.transform = `translate3d(${Math.min(max, Math.max(min, -itemWidth * idx + swipeAmount))}%, 0, 0)`;
     };
 
     const idxChanged = supressEvent => {

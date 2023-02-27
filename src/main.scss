@@ -7,6 +7,8 @@ dioada-carousel {
     dioada-carousel-items {
         display: flex;
         dioada-carousel-item {
+            // This is essential to stop flashing in iOS
+            transform: translate3d(0, 0, 0);
             flex: 1;
             display: flex;
         }
