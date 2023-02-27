@@ -1,7 +1,7 @@
 {
     "name": "dioada-carousel",
     "version": "1.0.0",
-    "description": "XXXXXXXXXXXXXX",
+    "description": "A bare-bones carousel that uses a flex container to ensure that all items are the same height",
     "author": "Julian T Hill",
     "license": "ISC",
     "keywords": [
